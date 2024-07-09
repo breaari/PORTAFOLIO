@@ -14,8 +14,8 @@ export const Landing = () => {
             <Home></Home>
             <AboutMe></AboutMe>
             <Expertise></Expertise>
-            <Resume></Resume>
-            <Studies></Studies>
+            {/* <Resume></Resume>
+            <Studies></Studies> */}
             <Projects></Projects>
             <Contact></Contact>
         </div>

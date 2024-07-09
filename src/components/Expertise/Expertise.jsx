@@ -1,43 +1,53 @@
-import 'boxicons'
+import { SiJavascript } from "react-icons/si";
+import { SiHtml5 } from "react-icons/si";
+import { SiCss3 } from "react-icons/si";
+import { SiReact } from "react-icons/si";
+import { SiNodedotjs } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { SiTailwindcss } from "react-icons/si";
+import { SiRedux } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
 
 export const Expertise = ()=>{
     return (
-        <div id="expertise" className="z-0 bg-azuloscuro h-auto w-full text-celesteclaro  flex flex-col px-12">
-           <a className="font-bold text-[30px] flex items-center justify-center py-10">Expertise en Tecnología</a>
-           <div className='flex flex-row justify-around '>
-                <div className='flex flex-col bg-[#00000080] p-2 rounded-[20px] shadow-md transition duration-300 hover:scale-110'>
-                    <box-icon name='javascript' type='logo' size='150px' color='#A4B9E4'></box-icon>
-                    <a className='font-semibold flex items-center justify-center py-2'>Javascript</a>
+        <div id="expertise" className="z-0 bg-gradient-to-t from-celeste to-azuloscuro flex flex-col p-12 font-squada">
+           <a className="text-5xl flex items-center justify-center py-10 text-blanco">TECNOLOGÍAS</a>
+           <div className='flex flex-wrap gap-4 justify-center text-celesteclaro text-3xl'>
+                <div className='flex flex-row items-center bg-azuloscuro py-2 px-4  rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco'>
+                    <SiJavascript />
+                    <a className='flex items-center justify-center ml-2'>JAVASCRIPT</a>
                 </div>
-                <div className='flex flex-col bg-[#00000080] p-2 rounded-[20px] shadow-md transition duration-300 hover:scale-110'>
-                    <box-icon type='logo' name='html5' size='150px' color='#A4B9E4'></box-icon>
-                    <a className='font-semibold flex items-center justify-center py-2'>HTML</a>
+                <div className='flex flex-row items-center bg-azuloscuro py-2 px-4 rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco'>
+                    <SiHtml5 />
+                    <a className='flex items-center justify-center ml-2'>HTML</a>
                 </div>
-                <div className='flex flex-col bg-[#00000080] p-2 rounded-[20px] shadow-md transition duration-300 hover:scale-110'>
-                    <box-icon name='css3' type='logo' size='150px' color='#A4B9E4' ></box-icon>
-                    <a className='font-semibold flex items-center justify-center py-2'>CSS</a>
+                <div className='flex flex-row items-center bg-azuloscuro py-2 px-4 rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco'>
+                    <SiCss3 />
+                    <a className='flex items-center justify-center ml-2'>CSS</a>
                 </div>
-                <div className='flex flex-col bg-[#00000080] p-2 rounded-[20px] shadow-md transition duration-300 hover:scale-110'>
-                    <box-icon type='logo' name='react' size='150px' color='#A4B9E4'></box-icon>
-                    <a className='font-semibold flex items-center justify-center py-2'>React</a>
+                <div className='flex flex-row items-center bg-azuloscuro py-2 px-4  rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco'>
+                    <SiReact />
+                    <a className='flex items-center justify-center ml-2'>REACT</a>
                 </div>
-            </div>
-            <div className='flex flex-row justify-around py-12'>
-                <div className='flex flex-col bg-[#00000080] p-2 rounded-[20px] shadow-md transition duration-300 hover:scale-110'>
-                    <box-icon name='nodejs' type='logo' size='150px' color='#A4B9E4' ></box-icon>
-                    <a className='font-semibold flex items-center justify-center py-2'>Node.js</a>
+                <div className='flex flex-row items-center bg-azuloscuro py-2 px-4  rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco'>
+                    <SiNodedotjs />
+                    <a className='flex items-center justify-center ml-2 '>NODE.JS</a>
                 </div>
-                <div className='flex flex-col bg-[#00000080] p-2 rounded-[20px] shadow-md transition duration-300 hover:scale-110'>
-                    <box-icon name='postgresql' type='logo' size='150px' color='#A4B9E4'></box-icon>
-                    <a className='font-semibold flex items-center justify-center py-2'>PostgreSQL</a>
+                <div className='flex flex-row items-center bg-azuloscuro py-2 px-4  rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco'>
+                    <BiLogoPostgresql />
+                    <a className='flex items-center justify-center ml-2'>POSTGRESQL</a>
                 </div>
-                <div className='flex flex-col bg-[#00000080] p-2 rounded-[20px] shadow-md transition duration-300 hover:scale-110'>
-                    <box-icon name='tailwind-css' type='logo'size='150px' color='#A4B9E4' ></box-icon>
-                    <a className='font-semibold flex items-center justify-center py-2'>Tailwind CSS</a>
+                <div className='flex flex-row items-center bg-azuloscuro py-2 px-4  rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco'>
+                    <SiTailwindcss />
+                    <a className='flex items-center justify-center ml-2'>TAILWIND CSS</a>
                 </div>
-                <div className='flex flex-col bg-[#00000080] p-2 rounded-[20px] shadow-md transition duration-300 hover:scale-110'>
-                    <box-icon type='logo' name='redux' size='150px' color='#A4B9E4'></box-icon>
-                    <a className='font-semibold flex items-center justify-center py-2'>Redux</a>
+                <div className='flex flex-row items-center bg-azuloscuro py-2 px-4 rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco'>
+                    <SiRedux />
+                    <a className='flex items-center justify-center ml-2'>REDUX</a>
+                </div>
+                <div className='flex flex-row items-center bg-azuloscuro py-2 px-4 rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco'>
+                    <SiExpress />
+                    <a className='flex items-center justify-center ml-2'>EXPRESS</a>
                 </div>
             </div>
         </div>

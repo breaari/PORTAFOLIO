@@ -1,6 +1,6 @@
-export const Form = () => {
+export const Formulario = () => {
     return (
-        <Form>
+        <form>
         <div className="text-celesteclaro border-celesteclaro border rounded-md p-4 flex flex-col">
             <label>Nombre:
                 <input></input>
@@ -15,6 +15,6 @@ export const Form = () => {
                 <input></input>
             </label>
         </div>
-        </Form>
+        </form>
     )
 }
