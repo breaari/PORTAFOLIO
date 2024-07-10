@@ -6,6 +6,7 @@ import { Expertise } from '../components/Expertise/Expertise'
 import { Projects } from '../components/Projects/Projects'
 import { Contact } from '../components/Contact/Contact'
 import { Studies } from '../components/Studies/Studies'
+import { Footer } from "../components/Footer/Footer"
 
 export const Landing = () => {
     return (
@@ -18,6 +19,7 @@ export const Landing = () => {
             <Studies></Studies> */}
             <Projects></Projects>
             <Contact></Contact>
+            <Footer></Footer>
         </div>
     )
 }

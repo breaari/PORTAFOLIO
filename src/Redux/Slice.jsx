@@ -1,19 +1,23 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  activeSection: 'home'
+  activeSections: ['home'],
+  theme: 'light'
 };
 
 const Slice = createSlice({
-  name: "storage",
+  name: "global",
   initialState,
   reducers: {
-    setActiveSection(state, action) {
-      state.activeSection = action.payload;
+    setActiveSections(state, action) {
+      state.activeSections = action.payload;
+    },
+    toggleTheme(state) {
+      state.theme = state.theme === 'dark' ? 'light' : 'dark';
     }
   },
 });
 
-export const { setActiveSection } = Slice.actions;
+export const { setActiveSections, toggleTheme } = Slice.actions;
 
 export default Slice.reducer;

@@ -40,4 +40,3 @@ const TypingEffect = ({ text, speed }) => {
 };
 
 export default TypingEffect;
-
