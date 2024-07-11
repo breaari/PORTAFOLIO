@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Slide, ToastContainer, Zoom, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -10,6 +10,21 @@ import axios from 'axios'
 export const Formulario = () => {
 
     const { t } = useTranslation();
+
+    const [isSmallScreen, setIsSmallScreen] = useState(false)
+
+    useEffect(() => {
+      const checkScreenSize = () => {
+        setIsSmallScreen(window.innerWidth < 980);
+      };
+  
+      checkScreenSize();
+      window.addEventListener("resize", checkScreenSize);
+  
+      return () => {
+        window.removeEventListener("resize", checkScreenSize);
+      };
+    }, []);
 
     const initialInput = {
         name: "",
@@ -151,7 +166,7 @@ export const Formulario = () => {
                         {t('sendbutton')}
                 </button>
                 <ToastContainer
-                  position="top-right"
+                  position={isSmallScreen ? "top-center" : "top-right"}
                   autoClose={5000}
                   hideProgressBar={true}
                   newestOnTop={false}
