@@ -14,26 +14,38 @@ import { useState } from "react";
 export const Siglo21 = () => {
     const { t } = useTranslation();
     const [hovered, setHovered] = useState(false);
-    console.log("hocered:", hovered)
+    
+    const handleMouseEnter = () => {
+      setHovered(true);
+    };
+  
+    const handleMouseLeave = () => {
+      setHovered(false);
+    };
   
     return (
-      <div className="relative bg-azuloscuro rounded-md my-6 flex flex-row justify-center items-center text-center shadow-md border-4 border-azuloscuro overflow-hidden">
-        <div className="min-w-[500px] h-auto relative">
-        <img
-          src={siglo21}
-          className="w-[500px] h-auto object-cover rounded-tl-md rounded-bl-md transition-opacity duration-300 ease-in-out hover:opacity-40"
-          alt="Siglo 21"
-          onMouseEnter={() => setHovered(true)}
-          onMouseLeave={() => setHovered(false)}
-        />
-        
-        <div className={hovered ? "absolute inset-0 flex flex-row justify-center items-center gap-12" : "hidden"}>
-         <LuCode2 className= " text-white text-7xl cursor-pointer border-4 rounded-[50%] p-4"/>
-         <LuLink className=" text-white text-7xl cursor-pointer border-4 rounded-[50%] p-4"/>
-        </div>
-        </div>
-        
-       
+      <div className="relative bg-azuloscuro mq1220:flex-col rounded-md my-6 flex flex-row justify-center items-center text-center shadow-md border-4 border-azuloscuro overflow-hidden">
+          <div className="min-w-[500px] h-auto relative">
+              <img
+                src={siglo21}
+                className={`w-[500px] h-auto object-cover mq1220:rounded-tl-none mq1220:rounded-bl-none rounded-tl-md rounded-bl-md transition-opacity duration-300 ease-in-out ${hovered ? "opacity-20" : "opacity-100"}`}
+                alt="Siglo 21"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              />
+              <div 
+                className={`absolute inset-0 flex flex-row justify-center items-center gap-12 transition-opacity duration-300 ease-in-out ${hovered ? "opacity-100" : "opacity-0"} z-10 pointer-events-none`}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              >
+              <a href="https://github.com/breaari/S21" target="_blank" rel="noopener noreferrer" className="pointer-events-auto">
+                  <LuCode2 className="text-white text-7xl cursor-pointer border-4 rounded-[50%] p-4" />
+                </a>
+                <a href="https://universidadsiglo21online.com" target="_blank" rel="noopener noreferrer" className="pointer-events-auto">
+                  <LuLink className="text-white text-7xl cursor-pointer border-4 rounded-[50%] p-4" />
+                </a>
+              </div>
+            </div>
         <div className="p-6 flex flex-col justify-center">
           <h1 className="text-blanco text-3xl">{t('projecttittle1')}</h1>
           <p className="text-celesteclaro text-2xl">{t('projecttext1')}</p>

@@ -28,6 +28,16 @@
     "message": "MESSAGE",
     "sendbutton": "SEND",
   
-    "footertext": "DESIGN AND DEVELOPMENT - ARIANA BREA"
+    "footertext": "DESIGN AND DEVELOPMENT - ARIANA BREA",
+
+    "toast-errorserver": "SERVER ERROR, PLEASE TRY AGAIN LATER.",
+    "toast-success": "THANK YOU FOR CONTACTING! I WILL BE IN TOUCH SOON.",
+    "toast-errordefault": "PLEASE COMPLETE ALL FIELDS CORRECTLY BEFORE SUBMITTING.",
+    "toast-errornoemail": "EMAIL CANNOT BE EMPTY.",
+    "toast-errorbademail": "PLEASE ENTER A VALID EMAIL ADDRESS.",
+    "toast-errormessage": "THE MESSAGE CANNOT BE MORE THAN 200 CHARACTERS.",
+    "toast-errornoname": "THE NAME MUST BE AT LEAST 3 CHARACTERS LONG.",
+    "toast-errorbadname": "THE NAME CAN ONLY CONTAIN LETTERS AND SPACES."
+
   }
   

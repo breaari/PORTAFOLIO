@@ -30,10 +30,8 @@ export const Right = () => {
 
     useEffect(() => {
         if (theme === "dark") {
-            console.log('Adding light mode');
             document.documentElement.classList.add('dark');
         } else {
-            console.log('Removing light mode');
             document.documentElement.classList.remove('dark');
         }
     }, [theme]);

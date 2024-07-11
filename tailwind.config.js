@@ -73,7 +73,18 @@ export default {
           celeste: "#506DAD",
         },
       },
-    },
+      screens: {
+        mq1220: {
+          raw: "screen and (max-width: 1220px)",
+        },
+        mq980: {
+            raw: "screen and (max-width: 980px)",
+          },
+        mq780: {
+          raw: "screen and (max-width: 780px)",
+        }
+    }
+  }
   },
   plugins: [],
 }
