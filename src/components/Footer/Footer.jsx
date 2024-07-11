@@ -5,7 +5,7 @@ export const Footer = () => {
     const { t } = useTranslation();
 
     return ( 
-        <div className="bg-azuloscuro dark:bg-celesteclaro font-squada h-[120px] flex justify-center p-12">
+        <div className="bg-azuloscuro dark:bg-celesteclaro font-squada h-[120px] flex justify-center p-12 mq980:items-center">
             <h1 className="text-celesteclaro dark:text-azuloscuro text-3xl text-center">
             {t('footertext')}</h1>
         </div>

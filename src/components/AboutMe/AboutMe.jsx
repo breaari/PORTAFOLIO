@@ -57,31 +57,29 @@ export const AboutMe = () => {
   }, []);
 
   return (
-    <div id="aboutme" className=" overflow-x-hidden z-0 bg-azuloscuro dark:bg-celesteclaro font-squada flex flex-row items-stretch justify-center p-12 space-x-8">
+    <div id="aboutme" className="overflow-x-hidden z-0 bg-azuloscuro dark:bg-celesteclaro font-squada flex flex-row items-stretch justify-center p-12 space-x-8 mq980:flex-col mq980:p-7 mq980:space-x-0">
             <div
-            
-            ref={aboutMeRef}
-            className="mt-12 w-[50%] p-8 text-center border-2 border-celeste dark:border-azuloscuro rounded-md"
+              ref={aboutMeRef}
+              className="mt-12 w-[50%] p-8 text-center border-2 border-celeste dark:border-azuloscuro rounded-md mq980:w-full mq980:p-5 mq980:mt-0"
             >
-                <h1 className="text-5xl text-white dark:text-azuloscuro">{t("aboutme")}</h1>
-                <p className="text-celesteclaro text-2xl text-center mt-2 dark:text-azuloscuro">
+                <h1 className="text-5xl text-white dark:text-azuloscuro mq980:text-3xl">{t("aboutme")}</h1>
+                <p className="text-celesteclaro text-2xl text-center mt-2 dark:text-azuloscuro mq980:text-xl">
                     {t("aboutmetext")}
                 </p>
             </div>
             <div
-            // id="resume"
             ref={resumeRef}
-            className=" mt-12 flex flex-col w-[50%] space-y-8"
+            className="mt-12 flex flex-col w-[50%] space-y-8 mq980:w-full mq980:p-0"
             >
-                <div className="text-center border-2 border-celeste dark:border-azuloscuro rounded-md p-8">
-                    <h1 className="text-5xl text-white dark:text-azuloscuro">{t("education")}</h1>
-                    <p className="text-celesteclaro text-2xl mt-2 dark:text-azuloscuro">
+                <div id='studies' className="text-center border-2 border-celeste dark:border-azuloscuro rounded-md p-8 mq980:p-5 mq980:mt-0">
+                    <h1 className="text-5xl text-white dark:text-azuloscuro mq980:text-3xl">{t("education")}</h1>
+                    <p className="text-celesteclaro text-2xl mt-2 dark:text-azuloscuro mq980:text-xl">
                     {t("educationtext1")}
                     </p>
                 </div>
-                <div className="text-center border-2 border-celeste dark:border-azuloscuro rounded-md p-8">
-                    <h1 className="text-5xl text-white dark:text-azuloscuro">{t("experience")}</h1>
-                    <p className="text-celesteclaro text-2xl mt-2 dark:text-azuloscuro">
+                <div id="resume" className="text-center border-2 border-celeste dark:border-azuloscuro rounded-md p-8 mq980:p-5 mq980:mt-16">
+                    <h1 className="text-5xl text-white dark:text-azuloscuro mq980:text-3xl">{t("experience")}</h1>
+                    <p className="text-celesteclaro text-2xl mt-2 dark:text-azuloscuro mq980:text-xl">
                     {t("experiencetext1")}
                     </p>
                     <p className="text-celesteclaro text-2xl text-center mt-2">

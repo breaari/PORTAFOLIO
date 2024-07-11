@@ -54,10 +54,10 @@ export const Expertise = ()=>{
 
 
     return (
-        <div className="z-0 bg-azuloscuro dark:bg-celesteclaro flex flex-col p-12 font-squada">
+        <div className="z-0 bg-azuloscuro dark:bg-celesteclaro flex flex-col p-12 font-squada mq980:p-7">
             <div id="expertise" ref={expertiseRef} >
-           <a className="text-5xl flex items-center justify-center py-10 text-blanco dark:text-azuloscuro mt-12" >{t('technologies')}</a>
-           <div className='flex flex-wrap gap-4 justify-center text-celesteclaro text-3xl dark:text-azuloscuro'>
+           <a className="text-5xl flex items-center justify-center py-10 text-blanco dark:text-azuloscuro mt-12 mq980:mt-0 mq980:text-3xl mq980:py-6" >{t('technologies')}</a>
+           <div className='flex flex-wrap gap-4 justify-center text-celesteclaro text-3xl dark:text-azuloscuro mq980:text-xl'>
                 <div className='flex flex-row items-center py-2 px-4 rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco  border-2 border-celesteclaro hover:border-blanco dark:border-azuloscuro dark:hover:text-azuloscuro'>
                     <SiJavascript />
                     <a className='flex items-center justify-center ml-2'>JAVASCRIPT</a>

@@ -117,40 +117,39 @@ export const Formulario = () => {
     };
     
     return (
-        <div className="w-[80%] border-celesteclaro dark:border-azuloscuro border-2 rounded-md py-8 px-12  flex flex-col justify-center font-squada">
-            <h1 className="text-5xl text-white text-center dark:text-azuloscuro">{t('contacttittle')}</h1>
+        <div className="w-[80%] border-celesteclaro dark:border-azuloscuro border-2 rounded-md py-8 px-12  flex flex-col justify-center font-squada mq980:w-full mq980:py-5 mq980:px-7">
+            <h1 className="text-5xl text-white text-center dark:text-azuloscuro mq980:text-3xl">{t('contacttittle')}</h1>
             <form 
-                className="flex flex-col text-3xl text-celesteclaro dark:text-azuloscuro items-center"
+                className="flex flex-col text-3xl text-celesteclaro dark:text-azuloscuro items-center mq980:text-2xl"
                 onSubmit={handleSubmit}
             >
                 <label className="flex flex-col mt-4 w-full">{t('name')}
                     <input 
-                        className="border-b-2 bg-transparent  border-celesteclaro dark:border-azuloscuro outline-none mt-2"
+                        className="border-b-2 bg-transparent  border-celesteclaro dark:border-azuloscuro outline-none mt-2 mq980:mt-1"
                         maxLength="40"
                         name="name" value={input.name} onChange={handleChange}
                     />
                 </label>
                 <label className="flex flex-col mt-4  w-full">EMAIL:
                     <input 
-                        className="border-b-2 bg-transparent border-celesteclaro dark:border-azuloscuro outline-none mt-2"
+                        className="border-b-2 bg-transparent border-celesteclaro dark:border-azuloscuro outline-none mt-2 mq980:mt-1"
                         maxLength="40"
                         name="email" value={input.email} onChange={handleChange}
                     />
                 </label>
                 <label className="flex flex-col my-4 w-full">{t('message')}
                     <input 
-                        className="border-b-2 bg-transparent border-celesteclaro dark:border-azuloscuro outline-none mt-2"
+                        className="border-b-2 bg-transparent border-celesteclaro dark:border-azuloscuro outline-none mt-2 mq980:mt-1"
                         maxLength="205"
                         name="message" value={input.message} onChange={handleChange}
                     />
                 </label>
                 <button 
-                    className="bg-celesteclaro dark:bg-azuloscuro dark:text-celesteclaro rounded-md py-1 w-[150px] mt-4 text-azuloscuro"
+                    className="bg-celesteclaro dark:bg-azuloscuro dark:text-celesteclaro rounded-md py-1 w-[150px] mt-4 text-azuloscuro mq980:w-[90px]"
                     type="submit"
                     >
                         {t('sendbutton')}
                 </button>
-
                 <ToastContainer
                   position="top-right"
                   autoClose={5000}

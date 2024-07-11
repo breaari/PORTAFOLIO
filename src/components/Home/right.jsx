@@ -46,7 +46,7 @@ export const Right = () => {
     };
 
     return (
-        <div className="bg-azuloscuro text-blanco top-[50%] right-0 absolute rounded-tl-md rounded-bl-md  px-3 py-5 text-3xl space-y-2">
+        <div className="bg-azuloscuro text-blanco top-[25%] right-0 absolute rounded-tl-md rounded-bl-md  px-3 py-5 text-3xl space-y-2 mq980:text-2xl">
         
         { esEn ? 
             <p onClick={toggleEsEn} className="cursor-pointer">ES</p> 

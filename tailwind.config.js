@@ -12,7 +12,7 @@ export default {
         leaveLeft: 'leaveLeft 1.5s ease-out',
         leaveRight: 'leaveRight 1.5s ease-out',
         leaveTop: 'leaveTop 1.5s ease-out',
-        enterBottom: 'leaveTop 1.5s ease-out',
+        enterBottom: 'enterBottom 1.5s ease-out',
         enterIn: 'enterIn 1.5s ease-out forwards',
         leaveOut: 'leaveOut 1.5s ease-in forwards',
       },
