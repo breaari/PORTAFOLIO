@@ -11,8 +11,8 @@ export default {
         enterTop: 'enterTop 1.5s ease-out',
         leaveLeft: 'leaveLeft 1.5s ease-out',
         leaveRight: 'leaveRight 1.5s ease-out',
-        leaveTop: 'leaveTop 1.5s ease-out',
-        enterBottom: 'enterBottom 1.5s ease-out',
+        leaveTop: 'leaveTop 2s ease-out',
+        enterBottom: 'enterBottom 2s ease-out',
         enterIn: 'enterIn 1.5s ease-out forwards',
         leaveOut: 'leaveOut 1.5s ease-in forwards',
       },
@@ -42,12 +42,12 @@ export default {
           '100%': { transform: 'translateX(100%)', opacity: 0 },
         },
         leaveTop: {
-          '0%': { transform: 'translateY(0)', opacity: 1 },
-          '100%': { transform: 'translateY(-100%)', opacity: 0 },
+          '0%': { opacity: 1 },
+          '100%': { opacity: 0 },
         },
         enterBottom: { 
-          '0%': { transform: 'translateY(100%)', opacity: 0 },
-          '100%': { transform: 'translateY(0)', opacity: 1 },
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
         },
         enterIn: {
           '0%': { transform: 'scale(0)', opacity: 0 },

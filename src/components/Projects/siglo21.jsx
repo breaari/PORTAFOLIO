@@ -75,7 +75,7 @@ export const Siglo21 = () => {
               </div>
         <div className="p-6 flex flex-col justify-center">
           <h1 className="text-blanco text-3xl dark:text-azuloscuro">{t('projecttittle1')}</h1>
-          <p className="text-celesteclaro text-2xl mq980:text-xl dark:text-azuloscuro">{t('projecttext1')}</p>
+          <p className="text-celesteclaro text-2xl mq980:text-xl dark:text-azuloscuro mt-4 ">{t('projecttext1')}</p>
           <div className="flex flex-wrap gap-1 justify-center text-celesteclaro text-xl mt-4 mq980:text-[16px] dark:text-azuloscuro">
             <div className="flex flex-row items-center py-2 px-4 mq980:py-1 mq980:px-2 border-2 border-celesteclaro rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco hover:border-blanco dark:border-azuloscuro dark:hover:text-azuloscuro">
               <SiJavascript />
