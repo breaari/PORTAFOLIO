@@ -353,7 +353,7 @@ export const Projects = () => {
           >
             {"<"}
           </button>
-          <div className="relative w-full mq1220:w-[520px] mq980:w-[100%] mq980:h-[800px] overflow-hidden">
+          <div className="relative w-full mq1220:w-[520px] mq400:w-[100%] mq980:w-[380px] mq980:h-[800px] overflow-hidden">
             <div
               id="siglo21"
               ref={siglo21Ref}

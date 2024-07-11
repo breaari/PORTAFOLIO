@@ -54,7 +54,7 @@ export const Nav = () => {
 
 
   return (
-    <nav className="bg-transparent flex items-center h-[100px] w-full font-squada fixed top-0 z-10 mq980:px-8">
+    <nav className="bg-transparent flex items-center h-[100px] w-full font-squada fixed top-0 z-10 mq980:px-8 mq980:flex-row mq980:justify-between">
       <div className='block mq980:hidden flex w-[450px] justify-center text-[50px] text-celesteclaro'>ARIANA BREA</div>
       <div className="block mq980:hidden flex space-x-5 justify-end items-center mr-[30px] w-full text-[22px]">
         <button onClick={() => handleScrollToSection('home')} className={`px-3 cursor-pointer ${activeSections.includes('home') ? 'text-celesteclaro' : 'text-azuloscuro hover:text-celesteclaro'}`}>{t('home')}</button>

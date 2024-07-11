@@ -80,8 +80,8 @@ export default {
         mq980: {
             raw: "screen and (max-width: 980px)",
           },
-        mq780: {
-          raw: "screen and (max-width: 780px)",
+        mq400: {
+          raw: "screen and (max-width: 400px)",
         }
     }
   }
