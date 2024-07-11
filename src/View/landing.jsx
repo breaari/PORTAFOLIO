@@ -8,7 +8,7 @@ import { Footer } from "../components/Footer/Footer"
 
 export const Landing = () => {
     return (
-        <div>
+        <div className='font-squada'>
             <Nav />
             <Home></Home>
             <AboutMe></AboutMe>

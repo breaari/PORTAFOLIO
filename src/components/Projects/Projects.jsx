@@ -98,7 +98,7 @@ export const Projects = () => {
     <div
       id="projects"
       ref={projectsRef}
-      className="overflow-x-hidden z-0 min-h-screen flex flex-col items-center justify-center font-squada p-12 mq980:p-7"
+      className="overflow-x-hidden z-0 flex flex-col items-center justify-center font-squada p-12 mq980:p-7"
     >
 
       <h1 className="text-blanco text-5xl text-center my-12 dark:text-azuloscuro mq980:mt-0 mq980:mb-7 mq980:text-3xl">
@@ -115,7 +115,7 @@ export const Projects = () => {
           >
             {"<"}
           </button>
-          <div className="relative w-full mq1220:w-[520px] mq400:w-[100%] mq980:w-[380px] mq980:h-[800px] overflow-hidden">
+          <div className="relative w-full mq1220:w-[520px] mq400:w-[100%] mq980:w-[350px] mq980:min-h-[800px] overflow-hidden">
             <div
               id="siglo21"
               ref={siglo21Ref}

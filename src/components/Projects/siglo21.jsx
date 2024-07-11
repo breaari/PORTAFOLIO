@@ -28,7 +28,7 @@ export const Siglo21 = () => {
     }
   
     return (
-      <div className="relative bg-azuloscuro dark:bg-transparent mq1220:flex-col rounded-md my-6 flex flex-row justify-center items-center text-center shadow-md border-4 border-azuloscuro overflow-hidden">
+      <div className="relative bg-azuloscuro dark:bg-transparent mq1220:flex-col rounded-md my-6 flex flex-row justify-center items-center text-center shadow-md border-4 border-azuloscuro overflow-hidden ">
           
           <div className="block mq980:hidden min-w-[500px] h-auto relative  mq980:min-w-full bg-azuloscuro">
               <img
@@ -55,7 +55,7 @@ export const Siglo21 = () => {
               <div className="hidden mq980:block h-auto relative min-w-full bg-azuloscuro">
                 <img
                   src={siglo21}
-                  className={`dark:border-b-4 dark:border-azuloscuro  w-full h-auto object-cover transition-opacity duration-300 ease-in-out ${hovered ? "opacity-20" : "opacity-100"} `}
+                  className={`dark:border-b-4 dark:border-azuloscuro w-full h-auto object-cover transition-opacity duration-300 ease-in-out ${hovered ? "opacity-20" : "opacity-100"} `}
                   alt="Siglo 21"
                   onClick={toggleImage}
                 />

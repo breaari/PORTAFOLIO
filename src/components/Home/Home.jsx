@@ -10,7 +10,7 @@ export const Home = ()=>{
     const { t } = useTranslation();
     
     return (
-        <div id="home" className="h-screen max-w-screen bg-gradient-to-b from-celeste to-azuloscuro dark:from-celeste dark:to-celesteclaro flex flex-row font-squada px-12 pt-12 mq980:flex-col mq980:items-center mq980:justify-center">
+        <div id="home" className="font-squada h-screen max-w-screen bg-gradient-to-b from-celeste to-azuloscuro dark:from-celeste dark:to-celesteclaro flex flex-row  px-12 pt-12 mq980:flex-col mq980:items-center mq980:justify-center">
             <Right></Right>
             <div className="w-[40%] flex flex-col items-center justify-center mq980:w-full mq980:h-[50%] mq980:justify-end mq980:items-center mq780:items-end">
                 <div className="h-[500px] w-[500px] mq980:w-[300px] mq980:h-[300px] overflow-hidden">
