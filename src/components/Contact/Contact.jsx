@@ -40,7 +40,7 @@ export const Contact = ()=>{
 
     return (
         <div id="contact" className="h-screen max-w-screen bg-gradient-to-b from-celeste to-azuloscuro dark:from-celeste dark:to-celesteclaro flex flex-row px-12 pt-12 mq980:flex-col mq980:px-7 mq980:pt-7 mq980:items-center">
-            <div ref={formRef} className="w-[60%] flex flex-col justify-center items-center mq980:w-[100%] mq400:w-[100%] mq980:h-[50%] mq980:justify-end mq980:mt-12">
+            <div ref={formRef} className="w-[60%] flex flex-col justify-center items-center mq980:w-[100%] mq400:w-[100%] mq980:h-[50%] mq980:justify-end">
             <Formulario></Formulario>
             </div> 
            <div className="w-[40%] flex flex-col items-center justify-center mq980:w-full mq980:h-[50%] mq980:justify-center">
