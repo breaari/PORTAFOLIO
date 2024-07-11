@@ -28,7 +28,7 @@ export const Siglo21 = () => {
     }
   
     return (
-      <div className="relative bg-azuloscburo dark:bg-transparent mq1220:flex-col rounded-md my-6 flex flex-row justify-center items-center text-center shadow-md border-4 border-azuloscuro overflow-hidden">
+      <div className="relative bg-azuloscuro dark:bg-transparent mq1220:flex-col rounded-md my-6 flex flex-row justify-center items-center text-center shadow-md border-4 border-azuloscuro overflow-hidden">
           
           <div className="block mq980:hidden min-w-[500px] h-auto relative  mq980:min-w-full bg-azuloscuro">
               <img
