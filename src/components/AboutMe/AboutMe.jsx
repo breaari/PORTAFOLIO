@@ -82,7 +82,7 @@ export const AboutMe = () => {
                     <p className="text-celesteclaro text-2xl mt-2 dark:text-azuloscuro mq980:text-xl">
                     {t("experiencetext1")}
                     </p>
-                    <p className="text-celesteclaro text-2xl text-center mt-2">
+                    <p className="text-celesteclaro text-2xl text-center mt-2 dark:text-azuloscuro mq980:text-xl">
                     {t("experiencetext2")}
                     </p>
                 </div>

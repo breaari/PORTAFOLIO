@@ -32,10 +32,10 @@ export const Fitness = () => {
 
     return (
         <div className="bg-azuloscuro dark:bg-transparent rounded-md my-6 flex flex-row mq1220:flex-col justify-center items-center text-center shadow-md border-4 border-azuloscuro ">
-            <div className="block mq980:hidden min-w-[500px] h-auto relative mq980:min-w-full ">
+            <div className="block mq980:hidden min-w-[500px] h-auto relative mq980:min-w-full bg-azuloscuro">
               <img
                 src={fitness}
-                className={` mq980:w-full w-[500px] mq1220:rounded-bl-none mq1220:rounded-tl-none h-auto object-cover rounded-tl-md rounded-bl-md transition-opacity duration-300 ease-in-out ${hovered ? "opacity-20" : "opacity-100"} `}
+                className={`dark:border-r-4 dark:border-azuloscuro mq980:w-full w-[500px] mq1220:rounded-bl-none mq1220:rounded-tl-none h-auto object-cover rounded-tl-md rounded-bl-md transition-opacity duration-300 ease-in-out ${hovered ? "opacity-20" : "opacity-100"} `}
                 alt="Para vos fitness"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
@@ -53,7 +53,7 @@ export const Fitness = () => {
                 </a>
               </div>
             </div>
-            <div className="hidden mq980:block h-auto relative min-w-full">
+            <div className="hidden mq980:block h-auto relative min-w-full bg-azuloscuro">
               <img
                 src={fitness}
                 className={`dark:border-b-4 dark:border-azuloscuro w-full rounded-bl-none rounded-tl-none h-auto object-cover transition-opacity duration-300 ease-in-out ${hovered ? "opacity-20" : "opacity-100"} `}
@@ -78,35 +78,35 @@ export const Fitness = () => {
                 <h1 className="text-blanco text-3xl dark:text-azuloscuro">{t('projecttittle2')}</h1> 
                 <p className="text-celesteclaro text-2xl mt-4 mq980:text-xl dark:text-azuloscuro">{t('projecttext2')}</p>
                 <div className='flex flex-wrap gap-1 justify-center text-celesteclaro  text-xl mt-4 mq980:text-[16px] dark:text-azuloscuro'>
-                <div className='flex flex-row items-center py-2 px-4 mq980:py-1 mq980:px-2 border-2 border-celesteclaro rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco hover:border-blanco dark:border-azuloscuro'>
+                <div className='flex flex-row items-center py-2 px-4 mq980:py-1 mq980:px-2 border-2 border-celesteclaro rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco hover:border-blanco dark:border-azuloscuro dark:hover:text-azuloscuro'>
                     <SiJavascript />
                     <a className='flex items-center justify-center ml-2'>JAVASCRIPT</a>
                 </div>
-                <div className='flex flex-row items-center border-2 border-celesteclaro py-2 px-4 mq980:py-1 mq980:px-2 rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco hover:border-blanco dark:border-azuloscuro'>
+                <div className='flex flex-row items-center border-2 border-celesteclaro py-2 px-4 mq980:py-1 mq980:px-2 rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco hover:border-blanco dark:border-azuloscuro dark:hover:text-azuloscuro'>
                     <SiHtml5 />
                     <a className='flex items-center justify-center ml-2'>HTML</a>
                 </div>
-                <div className='flex flex-row items-center border-2 border-celesteclaro py-2 px-4 mq980:py-1 mq980:px-2 rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco hover:border-blanco dark:border-azuloscuro'>
+                <div className='flex flex-row items-center border-2 border-celesteclaro py-2 px-4 mq980:py-1 mq980:px-2 rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco hover:border-blanco dark:border-azuloscuro dark:hover:text-azuloscuro'>
                     <SiReact />
                     <a className='flex items-center justify-center ml-2'>REACT</a>
                 </div>
-                <div className='flex flex-row items-center border-2 border-celesteclaro py-2 px-4 mq980:py-1 mq980:px-2 rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco hover:border-blanco dark:border-azuloscuro '>
+                <div className='flex flex-row items-center border-2 border-celesteclaro py-2 px-4 mq980:py-1 mq980:px-2 rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco hover:border-blanco dark:border-azuloscuro dark:hover:text-azuloscuro'>
                     <SiNodedotjs />
                     <a className='flex items-center justify-center ml-2 '>NODE.JS</a>
                 </div>
-                <div className='flex flex-row items-center border-2 border-celesteclaro py-2 px-4 mq980:py-1 mq980:px-2 rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco hover:border-blanco dark:border-azuloscuro'>
+                <div className='flex flex-row items-center border-2 border-celesteclaro py-2 px-4 mq980:py-1 mq980:px-2 rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco hover:border-blanco dark:border-azuloscuro dark:hover:text-azuloscuro'>
                     <BiLogoPostgresql />
                     <a className='flex items-center justify-center ml-2'>POSTGRESQL</a>
                 </div>
-                <div className='flex flex-row items-center border-2 border-celesteclaro py-2 px-4 mq980:py-1 mq980:px-2 rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco hover:border-blanco dark:border-azuloscuro'>
+                <div className='flex flex-row items-center border-2 border-celesteclaro py-2 px-4 mq980:py-1 mq980:px-2 rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco hover:border-blanco dark:border-azuloscuro dark:hover:text-azuloscuro'>
                     <SiTailwindcss />
                     <a className='flex items-center justify-center ml-2'>TAILWIND CSS</a>
                 </div>
-                <div className='flex flex-row items-center border-2 border-celesteclaro py-2 px-4 mq980:py-1 mq980:px-2 rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco hover:border-blanco dark:border-azuloscuro'>
+                <div className='flex flex-row items-center border-2 border-celesteclaro py-2 px-4 mq980:py-1 mq980:px-2 rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco hover:border-blanco dark:border-azuloscuro dark:hover:text-azuloscuro'>
                     <SiRedux />
                     <a className='flex items-center justify-center ml-2'>REDUX</a>
                 </div>
-                <div className='flex flex-row items-center border-2 border-celesteclaro py-2 px-4 mq980:py-1 mq980:px-2 rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco hover:border-blanco dark:border-azuloscuro'>
+                <div className='flex flex-row items-center border-2 border-celesteclaro py-2 px-4 mq980:py-1 mq980:px-2 rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco hover:border-blanco dark:border-azuloscuro dark:hover:text-azuloscuro'>
                     <SiExpress />
                     <a className='flex items-center justify-center ml-2'>EXPRESS</a>
                 </div>
