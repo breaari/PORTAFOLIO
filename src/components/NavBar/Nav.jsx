@@ -64,7 +64,7 @@ export const Nav = () => {
         <button onClick={() => handleScrollToSection('contact')} className={`px-5 cursor-pointer py-1 rounded-[20px] ${activeSections.includes('contact') ? 'bg-azuloscuro text-celesteclaro' : 'bg-celesteclaro text-azuloscuro hover:bg-azuloscuro hover:text-celesteclaro'}`}>{t('contact')}</button>
       </div>
       <div className='hidden mq980:block flex w-[450px] justify-center text-[50px] text-celesteclaro'>AB</div>
-      <TbMenuDeep className='hidden mq980:block text-celesteclaro text-[100px] z-40' onClick={toggleMenuOpen}/>
+      <TbMenuDeep className='hidden mq980:block text-celesteclaro z-40 min-w-[50px] min-h-[50px]' onClick={toggleMenuOpen}/>
       { menuOpen && (
         <div className="absolute top-0 left-0 w-full h-screen bg-black bg-opacity-80 z-30 flex flex-col text-3xl text-celesteclaro items-center">
           <button onClick={()=> scrollMovile('home')} className="mt-[100px] px-3 cursor-pointer hover:scale-95 py-2">{t('home')}</button>

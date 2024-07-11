@@ -4,6 +4,10 @@ export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      transitionDuration: {
+        '2000': '2000ms',
+        '1500': '1500ms'
+      },
       animation: {
         blink: 'blink 1s step-end infinite',
         enterLeft: 'enterLeft 1.5s ease-out',

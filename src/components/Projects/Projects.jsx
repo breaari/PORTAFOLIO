@@ -121,7 +121,7 @@ export const Projects = () => {
               ref={siglo21Ref}
               className={`${
                 isSmallScreen
-                  ? "absolute top-0 left-0 w-full h-full transition-all duration-2000 transform"
+                  ? "absolute top-0 left-0 w-full h-full transition-all duration-1500 transform"
                   : "relative w-full"
               } ${
                 isSmallScreen 
@@ -136,7 +136,7 @@ export const Projects = () => {
               ref={fitnessRef}
               className={`${
                 isSmallScreen
-                  ? "absolute top-0 left-0 w-full h-full transition-all duration-2000 transform"
+                  ? "absolute top-0 left-0 w-full h-full transition-all duration-1500 transform"
                   : "relative w-full"
               } ${
                 isSmallScreen 
