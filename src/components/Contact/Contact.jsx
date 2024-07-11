@@ -7,7 +7,7 @@ export const Contact = ()=>{
             <div className="w-[60%] flex flex-col justify-center items-center mq980:w-full mq980:h-[50%] mq980:items-end">
             <Formulario></Formulario>
             </div> 
-           <div className="w-[40%] flex flex-col items-center justify-center mq980:w-full mq980:h-[50%] mq980:justify-end mq980:items-start">
+           <div className="w-[40%] flex flex-col items-center justify-center mq980:w-full mq980:h-[50%] mq980:items-start">
            <div className=" h-[500px] w-[500px] overflow-hidden mq980:w-[300px] mq980:h-[300px]">
             <img src= {avatar} className=" h-[500px] w-[500px] objet-cover mq980:w-[300px] mq980:h-[300px]"></img>
             </div>

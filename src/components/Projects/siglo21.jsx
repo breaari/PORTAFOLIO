@@ -28,7 +28,7 @@ export const Siglo21 = () => {
     }
   
     return (
-      <div className="relative bg-azuloscuro mq1220:flex-col rounded-md my-6 flex flex-row justify-center items-center text-center shadow-md border-4 border-azuloscuro overflow-hidden">
+      <div className="relative bg-azuloscuro dark:bg-transparent mq1220:flex-col rounded-md my-6 flex flex-row justify-center items-center text-center shadow-md border-4 border-azuloscuro overflow-hidden">
           <div className="block mq980:hidden min-w-[500px] h-auto relative  mq980:min-w-full">
               <img
                 src={siglo21}
@@ -53,7 +53,7 @@ export const Siglo21 = () => {
               <div className="hidden mq980:block h-auto relative min-w-full">
                 <img
                   src={siglo21}
-                  className={`w-full h-auto object-cover transition-opacity duration-300 ease-in-out ${hovered ? "opacity-20" : "opacity-100"} `}
+                  className={`dark:border-b-4 dark:border-azuloscuro  w-full h-auto object-cover transition-opacity duration-300 ease-in-out ${hovered ? "opacity-20" : "opacity-100"} `}
                   alt="Siglo 21"
                   onClick={toggleImage}
                 />
@@ -72,34 +72,34 @@ export const Siglo21 = () => {
                 )}
               </div>
         <div className="p-6 flex flex-col justify-center">
-          <h1 className="text-blanco text-3xl mq980:text-2xl">{t('projecttittle1')}</h1>
-          <p className="text-celesteclaro text-2xl mq980:text-xl">{t('projecttext1')}</p>
-          <div className="flex flex-wrap gap-1 justify-center text-celesteclaro text-xl mt-4 mq980:text-[16px]">
-            <div className="flex flex-row items-center py-2 px-4 mq980:py-1 mq980:px-2 border-2 border-celesteclaro rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco hover:border-blanco">
+          <h1 className="text-blanco text-3xl dark:text-azuloscuro">{t('projecttittle1')}</h1>
+          <p className="text-celesteclaro text-2xl mq980:text-xl dark:text-azuloscuro">{t('projecttext1')}</p>
+          <div className="flex flex-wrap gap-1 justify-center text-celesteclaro text-xl mt-4 mq980:text-[16px] dark:text-azuloscuro">
+            <div className="flex flex-row items-center py-2 px-4 mq980:py-1 mq980:px-2 border-2 border-celesteclaro rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco hover:border-blanco dark:border-azuloscuro">
               <SiJavascript />
               <a className="flex items-center justify-center ml-2">JAVASCRIPT</a>
             </div>
-            <div className="flex flex-row items-center border-2 border-celesteclaro py-2 px-4 mq980:py-1 mq980:px-2 rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco hover:border-blanco">
+            <div className="flex flex-row items-center border-2 border-celesteclaro py-2 px-4 mq980:py-1 mq980:px-2 rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco hover:border-blanco dark:border-azuloscuro">
               <SiHtml5 />
               <a className="flex items-center justify-center ml-2">HTML</a>
             </div>
-            <div className="flex flex-row items-center border-2 border-celesteclaro py-2 px-4 mq980:py-1 mq980:px-2 rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco hover:border-blanco">
+            <div className="flex flex-row items-center border-2 border-celesteclaro py-2 px-4 mq980:py-1 mq980:px-2 rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco hover:border-blanco dark:border-azuloscuro">
               <SiReact />
               <a className="flex items-center justify-center ml-2">REACT</a>
             </div>
-            <div className="flex flex-row items-center border-2 border-celesteclaro py-2 px-4 mq980:py-1 mq980:px-2 rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco hover:border-blanco">
+            <div className="flex flex-row items-center border-2 border-celesteclaro py-2 px-4 mq980:py-1 mq980:px-2 rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco hover:border-blanco dark:border-azuloscuro">
               <SiNodedotjs />
               <a className="flex items-center justify-center ml-2 ">NODE.JS</a>
             </div>
-            <div className="flex flex-row items-center border-2 border-celesteclaro py-2 px-4 mq980:py-1 mq980:px-2 rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco hover:border-blanco">
+            <div className="flex flex-row items-center border-2 border-celesteclaro py-2 px-4 mq980:py-1 mq980:px-2 rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco hover:border-blanco dark:border-azuloscuro">
               <SiTailwindcss />
               <a className="flex items-center justify-center ml-2">TAILWIND CSS</a>
             </div>
-            <div className="flex flex-row items-center border-2 border-celesteclaro py-2 px-4 mq980:py-1 mq980:px-2 rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco hover:border-blanco">
+            <div className="flex flex-row items-center border-2 border-celesteclaro py-2 px-4 mq980:py-1 mq980:px-2 rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco hover:border-blanco dark:border-azuloscuro">
               <SiRedux />
               <a className="flex items-center justify-center ml-2">REDUX</a>
             </div>
-            <div className="flex flex-row items-center border-2 border-celesteclaro py-2 px-4 mq980:py-1 mq980:px-2 rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco hover:border-blanco">
+            <div className="flex flex-row items-center border-2 border-celesteclaro py-2 px-4 mq980:py-1 mq980:px-2 rounded-md shadow-md transition duration-300 hover:scale-110 hover:text-blanco hover:border-blanco dark:border-azuloscuro">
               <SiExpress />
               <a className="flex items-center justify-center ml-2">EXPRESS</a>
             </div>
