@@ -160,7 +160,7 @@ export const Formulario = () => {
                     />
                 </label>
                 <button 
-                    className="bg-celesteclaro dark:bg-azuloscuro dark:text-celesteclaro rounded-md py-1 w-[150px] mt-4 text-azuloscuro mq980:w-[90px]"
+                    className="hover:scale-95  bg-celesteclaro dark:bg-azuloscuro dark:text-celesteclaro rounded-md py-1 w-[150px] mt-4 text-azuloscuro mq980:w-[90px]"
                     type="submit"
                     >
                         {t('sendbutton')}

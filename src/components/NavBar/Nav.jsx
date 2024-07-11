@@ -55,7 +55,7 @@ export const Nav = () => {
 
   return (
     <nav className="bg-transparent flex items-center h-[100px] w-full font-squada fixed top-0 z-10 mq980:px-8 mq980:flex-row mq980:justify-between">
-      <div className='block mq980:hidden flex w-[450px] justify-center text-[50px] text-celesteclaro'>ARIANA BREA</div>
+      <div onClick={()=> scrollMovile('home')} className='block mq980:hidden flex w-[450px] justify-center text-[50px] text-celesteclaro cursor-pointer'>ARIANA BREA</div>
       <div className="block mq980:hidden flex space-x-5 justify-end items-center mr-[30px] w-full text-[22px]">
         <button onClick={() => handleScrollToSection('home')} className={`px-3 cursor-pointer ${activeSections.includes('home') ? 'text-celesteclaro' : 'text-azuloscuro hover:text-celesteclaro'}`}>{t('home')}</button>
         <button onClick={() => handleScrollToSection('aboutme')} className={`px-3 cursor-pointer ${activeSections.includes('aboutme') ? 'text-celesteclaro' : 'hover:text-celesteclaro text-azuloscuro'}`}>{t('aboutme')}</button>
@@ -63,7 +63,7 @@ export const Nav = () => {
         <button onClick={() => handleScrollToSection('projects')} className={`px-3 cursor-pointer ${activeSections.includes('projects') ? 'text-celesteclaro' : 'hover:text-celesteclaro text-azuloscuro'}`}>{t('projects')}</button>
         <button onClick={() => handleScrollToSection('contact')} className={`px-5 cursor-pointer py-1 rounded-[20px] ${activeSections.includes('contact') ? 'bg-azuloscuro text-celesteclaro' : 'bg-celesteclaro text-azuloscuro hover:bg-azuloscuro hover:text-celesteclaro'}`}>{t('contact')}</button>
       </div>
-      <div className='hidden mq980:block flex w-[450px] justify-center text-[50px] text-celesteclaro'>AB</div>
+      <div onClick={()=> scrollMovile('home')} className='hidden mq980:block flex w-[450px] justify-center text-[50px] text-celesteclaro'>AB</div>
       <TbMenuDeep className='hidden mq980:block text-celesteclaro z-40 min-w-[50px] min-h-[50px]' onClick={toggleMenuOpen}/>
       { menuOpen && (
         <div className="absolute top-0 left-0 w-full h-screen bg-black bg-opacity-80 z-30 flex flex-col text-3xl text-celesteclaro items-center">
